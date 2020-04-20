@@ -1,21 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <title>COVID-19 - Statistics</title>
+    <title>COVID-19 - News</title>
+    <meta charset="utf-8">
+    <!-- Font Awesom CDN -->
     <script src="https://kit.fontawesome.com/18ff49a3e8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/statistics_style.css">
-    
+
+    <link rel="stylesheet" href="css/style.css">
+
+
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
     <script type="text/javascript" src="js/main.js"></script>
-    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
-    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
-    <script src="js/statistics.js"></script>
+    <script type="text/javascript" src="js/news.js" ></script>
+
 </head>
 
 <body>
+
     <!--    Start of navigation    -->
     <header>
         <div class="top-header">
@@ -41,37 +45,34 @@
             <div class="clearfix"></div>
         </div>
     </header>
-
+    <!--    End of navigation    -->
 
     <main>
+        <div class="main-container">
+            <!-- Nwes cards -->
+            <div class="news">
+                <h2>Today's COVID-19 News</h2>
+                <div class="news-area">
+<!--
+                    <div class="news-card">
+                        <div class="container">
+                            <a href="#" target="_blank">
+                            <div class="news-title"><h2>Alibaba Cloud will invest $28 billion more into its infrastructure over the next three years</h2></div>
+                            </a>
+                            <div class="news-author">Catherine Shu</div>
+                            <div class="news-image"><img src="https://techcrunch.com/wp-content/uploads/2017/02/gettyimages-492748010.jpg?w=601" alt="News Image"></div>
+                            <div class="news-description">Alibaba Cloud announced today that it will invest another RMB 200 billion (or about $28 billion) into its infrastructure over the next three years, prompted in part by increased demand for services like video conferencing and live streaming as businesse</div>
+                        </div>
+                    </div>
+-->
+                </div>
+            </div>
 
-        <div class="heading">
-            <h1>COVID-19 Statistics</h1>
         </div>
 
-        <div class="contain_table_left">
-            <h2>World Statistics</h2>
-            <table id="world">
-                <tr>
-                    <th>Countries</th>
-                    <th>Total Cases</th>
-                </tr>
-            </table>
-        </div>
-
-        <div id="graph"></div>
-
-        <div class="contain_table_right">
-            <h2>Canada Statistics</h2>
-            <table id="states">
-                <tr>
-                    <th>States</th>
-                    <th>Total Cases</th>
-                </tr>
-            </table>
-        </div>
     </main>
 
+    <!-- Footer area -->
     <footer>
         <div class="footer-area">
             <div class="footer-logo">

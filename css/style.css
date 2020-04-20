@@ -14,7 +14,9 @@ body {
     background-color: #eee;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     font-family: 'Noto Serif JP', serif;
 }
 
@@ -24,7 +26,7 @@ header {
     margin: 10px auto;
 }
 
-main p{
+main p {
     opacity: 0.8;
 }
 
@@ -180,9 +182,10 @@ nav ul li a {
 /* End of Home Main*/
 
 /* Spread */
-.spread-home{
+.spread-home {
     min-height: 450px;
 }
+
 .spread-area {
     text-align: center;
 }
@@ -227,7 +230,7 @@ nav ul li a {
 
 /* Symptoms */
 
-.symptom-home{
+.symptom-home {
     min-height: 550px;
 }
 
@@ -282,9 +285,10 @@ nav ul li a {
 
 /* Prevent */
 
-.protect-home{
+.protect-home {
     min-height: 700px;
 }
+
 .protect-area {
     text-align: center;
 
@@ -298,7 +302,7 @@ nav ul li a {
     word-spacing: 0.09em;
 }
 
-.protect-area p{
+.protect-area p {
     max-width: 700px;
     margin: auto;
 }
@@ -338,11 +342,12 @@ nav ul li a {
 }
 
 /* Current */
-.current-home{
+.current-home {
     text-align: center;
     min-height: 300px;
 }
-.current-home h2{
+
+.current-home h2 {
     margin: 1em 0;
     text-transform: capitalize;
     font-size: 2em;
@@ -350,7 +355,7 @@ nav ul li a {
     word-spacing: 0.09em;
 }
 
-.current-home p{
+.current-home p {
     opacity: 0.8;
 }
 
@@ -401,12 +406,15 @@ nav ul li a {
 #confirmed-color {
     background-color: #ffff99;
 }
+
 #probable-color {
     background-color: #ffd699;
 }
+
 #death-color {
     background-color: #ff9999;
 }
+
 #recovered-color {
     background-color: #99ffcc;
 }
@@ -443,7 +451,7 @@ nav ul li a {
     transform: rotate(15deg);
 }
 
-footer{
+footer {
     background-color: #3CC78F;
     min-height: 100px;
     font-size: 0.8em;
@@ -451,7 +459,7 @@ footer{
     border-radius: 4px;
 }
 
-.footer-area{
+.footer-area {
     display: flex;
     justify-content: space-between;
 }
@@ -463,32 +471,84 @@ footer{
     text-align: center;
 }
 
-.footer-logo a{
-        display: block;
+.footer-logo a {
+    display: block;
 }
 
-footer a{
+footer a {
     text-decoration: none;
     color: #000;
 }
 
-#logo-footer{
+#logo-footer {
     color: #000;
     font-size: 30px;
     font-weight: 700;
     text-decoration: none;
 }
 
-.footer-social a{
+.footer-social a {
     font-size: 2.5em;
     padding: 0.3em;
     color: #000;
 }
-.hashtag a{
+
+.hashtag a {
     font-size: 1.5em;
     font-weight: 600;
 }
 
+/* News */
+.news h2{
+    padding: 1em 0;
+}
+
+.news-area {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+/* To hide scrollbars https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp*/
+.news-area::-webkit-scrollbar {
+  display: none;
+}
+
+.news-card {
+    width: 550px;
+    background-color: #fff;
+    margin: 2em;
+    padding: 1.5em;
+    border-radius: 20px;
+    flex: 0 0 auto;
+}
+
+.news-card a {
+    color: #000;
+    text-decoration: none;
+}
+
+.news-title h2 {
+    padding: 0.5em 0;
+    margin: 0;
+}
+
+.news-author {
+    padding: 0.2em 0;
+}
+
+.news-image {
+    width: 500px;
+    margin: auto;
+}
+
+.news-image img {
+    width: 500px;
+    border-radius: 10px;
+}
+
+.news-description {
+    padding: 0.5em 0
+}
 
 
 @media (max-width: 768px) {
@@ -571,25 +631,26 @@ footer a{
     .symptom_list .list-right {
         margin-left: 0;
     }
-    
+
     .protect-image {
         display: none;
     }
-    
-    .protect-text ul{
+
+    .protect-text ul {
         text-align: left;
     }
 
     /*Start Card*/
-    .cards-area{
+    .cards-area {
         justify-content: space-around;
     }
-    .cards-area .cards{
+
+    .cards-area .cards {
         margin: 6px;
     }
-    
+
     /* Footer */
-    .footer-area{
+    .footer-area {
         display: block;
         text-align: center;
     }

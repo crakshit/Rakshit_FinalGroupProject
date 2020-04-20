@@ -18,11 +18,6 @@ $(document).ready(function () {
 
 $.getJSON('https://api.covid19api.com/summary', function(data) {
 
-//    var resources = data.resources.map(resource => `<a href="${resource.url}">${resource.description}</a><br>`),
-//        text = `<h2>${data.license_title}</h2><br>
-//               ${resources.join('')}`;
-//
-//    $(".mypanel").html(text);
     var newConfirmed = data.Global.NewConfirmed;
     var totalConfirmed = data.Global.TotalConfirmed;
     var totalDeaths = data.Global.TotalDeaths;

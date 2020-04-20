@@ -62,7 +62,7 @@ table th{
 }
 
 tr:hover {
-    background-color: #505050;
+    background-color: #ccc;
     cursor: default;
 }
 
