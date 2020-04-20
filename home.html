@@ -4,31 +4,11 @@
 <head>
     <meta charset="utf-8">
     <script src="https://kit.fontawesome.com/18ff49a3e8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('.toggle-menu').click(function() {
-                $('.toggle-menu').toggleClass('active');
-                $('nav').toggleClass('active');
-            })
-
-            $(window).scroll(function() {
-                //console.log($(window).scrollTop());
-                if ($(window).scrollTop() > 45) {
-                    $('.main-header').addClass('sticky');
-                }
-                if ($(window).scrollTop() < 44) {
-                    $('.main-header').removeClass('sticky');
-                }
-            })
-
-        })
-    </script>
-
-
+    <script type="text/javascript" src="js/main.js"></script>
 
 </head>
 
@@ -52,8 +32,7 @@
                     <li><a href="home.html">home</a></li>
                     <li><a href="#">current situation</a></li>
                     <li><a href="#">precautions</a></li>
-                    <li><a href="#">Canada</a></li>
-                    <li><a href="#">home</a></li>
+                    <li><a href="#">Situation Canada</a></li>
                 </ul>
             </nav>
             <div class="clearfix"></div>
@@ -69,7 +48,6 @@
                     <h2>keep yourself home quarantined.</h2>
                     <p>Influenza (also known as "flu") is a contagious respiratory illness caused by influenza viruses. It can cause mild to severe illness, and at times can lead to death.</p>
                     <button>Learn more</button>
-                    <!--                    <a href="#" type="button">Learn more</a>-->
                 </div>
                 <div class="main-image">
                     <img src="image/quarantine.png" alt="Home quarantined">
@@ -85,7 +63,7 @@
                     <div class="spread-div">
                         <div class="cause">
                             <i class="fas fa-box"></i>
-                            <h3>Contaminated Objects & Sustances</h3>
+                            <h3>Contaminated Objects &amp; Sustances</h3>
                             <p>Flu viruses can cause mild to severe illness. Learn common symptoms and complications.</p>
                         </div>
                         <div class="cause">
@@ -137,7 +115,7 @@
 
                 <div class="protect-area">
                     <h2>Take steps to protect yourself</h2>
-                    <p>There is currently no vaccine to prevent coronavirus diseasse 2019 (COVID-19). The best way to prevent illness is to avoid being exposed to this virus & protect yourself.</p>
+                    <p>There is currently no vaccine to prevent coronavirus diseasse 2019 (COVID-19). The best way to prevent illness is to avoid being exposed to this virus &amp; protect yourself.</p>
                 </div>
                 <div class="protect-div">
                     <div class="protect-image">
@@ -177,53 +155,56 @@
 
             <div class="current-home">
                 <h2>23 Lacs confirmed cases of COVID-19 through the world</h2>
+                <p>COVID-19 cases have been confirmed in more than 200 countries and territories. Here's global data of confirmed cases.</p>
 
                 <div class="current">
+                    <!--
                     <div class="list-detail">
                         <h2>Total cases globally</h2>
                     </div>
+-->
                     <div class="cards-area">
                         <!-- Total confiremd cases -->
-                        <div class="cards">
+                        <div class="cards" id="confirmed-color">
                             <div class="card-detail">
                                 <div class="card-icon">
                                     <i class="fas fa-procedures"></i>
                                 </div>
                                 <p class="card-name">Confirmed cases</p>
-                                <h2 class="card-number">123456</h2>
+                                <h2 class="card-number" id="confirmed_case">123456</h2>
                             </div>
                         </div>
 
                         <!-- Total Probable cases-->
-                        <div class="cards">
+                        <div class="cards" id="probable-color">
                             <div class="card-detail">
                                 <div class="card-icon">
                                     <i class="fas fa-ambulance"></i>
                                 </div>
-                                <p class="card-name">Probable cases</p>
-                                <h2 class="card-number">123456</h2>
+                                <p class="card-name">New cases</p>
+                                <h2 class="card-number" id="new_case">123456</h2>
                             </div>
                         </div>
 
                         <!-- Total deaths-->
-                        <div class="cards">
+                        <div class="cards" id="death-color">
                             <div class="card-detail">
                                 <div class="card-icon">
                                     <i class="fas fa-diagnoses"></i>
                                 </div>
                                 <p class="card-name">Total deaths</p>
-                                <h2 class="card-number">123456</h2>
+                                <h2 class="card-number" id="total_deaths">123456</h2>
                             </div>
                         </div>
 
                         <!-- Total recovered-->
-                        <div class="cards">
+                        <div class="cards" id="recovered-color">
                             <div class="card-detail">
                                 <div class="card-icon">
                                     <i class="fas fa-first-aid"></i>
                                 </div>
                                 <p class="card-name">Total recovered</p>
-                                <h2 class="card-number">123456</h2>
+                                <h2 class="card-number" id="total_recovered">123456</h2>
                             </div>
                         </div>
                     </div>
@@ -246,7 +227,7 @@
         <div class="footer-text">
             <p>Copyright &copy; 2020 Group #F</p>
             <div class="mail">
-                <a href="mailto:rakshit@chhodavadia.com">rakshit@chhodavadia.com</a>
+                <a href="mailto:groupf@conestoga.com">groupf@conestoga.com</a>
             </div>
             <div class="phone">
                 <a href="tel:+11237898520">+1 (123)-789-8520</a>
@@ -255,7 +236,10 @@
         <div class="footer-social">
             <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <div class="hashtag">
+                <a href="https://twitter.com/hashtag/covid19" target="_blank">#COVID19</a>
+            </div>
         </div>
     </footer>
 </body></html>

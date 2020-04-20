@@ -20,6 +20,10 @@ header {
     margin: 10px auto;
 }
 
+main p{
+    opacity: 0.8;
+}
+
 .top-header {
     padding: 10px 0;
 }
@@ -40,7 +44,6 @@ header {
     font-size: 16px;
     color: #222222;
     text-decoration: none;
-
 }
 
 .top-header ul li a i {
@@ -136,6 +139,12 @@ nav ul li a {
     word-spacing: 0.09em;
 }
 
+/*
+.main-area p {
+    opacity: 0.8;
+}
+*/
+
 .main-area button {
 
     display: inline-block;
@@ -166,6 +175,9 @@ nav ul li a {
 /* End of Home Main*/
 
 /* Spread */
+.spread-home{
+    min-height: 450px;
+}
 .spread-area {
     text-align: center;
 }
@@ -176,6 +188,11 @@ nav ul li a {
     font-size: 2em;
     letter-spacing: 0.01em;
     word-spacing: 0.09em;
+}
+
+.spread-area p {
+    max-width: 700px;
+    margin: auto;
 }
 
 .spread-div {
@@ -205,6 +222,10 @@ nav ul li a {
 
 /* Symptoms */
 
+.symptom-home{
+    min-height: 550px;
+}
+
 .symptom-image img {
     margin-top: 7em;
     margin-left: 2em;
@@ -225,8 +246,14 @@ nav ul li a {
     word-spacing: 0.09em;
 }
 
+.symptom-div p {
+    opacity: 0.8;
+}
+
+
 .symptom_list {
     display: flex;
+    opacity: 0.8;
 }
 
 .symptom_list .list-right {
@@ -249,17 +276,26 @@ nav ul li a {
 }
 
 /* Prevent */
+
+.protect-home{
+    min-height: 700px;
+}
 .protect-area {
     text-align: center;
 
 }
 
 .protect-area h2 {
-    margin: 0.5em 0;
+    margin: 1em 0;
     /*    text-transform: capitalize;*/
     font-size: 2em;
     letter-spacing: 0.01em;
     word-spacing: 0.09em;
+}
+
+.protect-area p{
+    max-width: 700px;
+    margin: auto;
 }
 
 .protect-text {
@@ -299,26 +335,35 @@ nav ul li a {
 /* Current */
 .current-home{
     text-align: center;
+    min-height: 300px;
 }
 .current-home h2{
-    margin: 0.5em 0;
+    margin: 1em 0;
     text-transform: capitalize;
     font-size: 2em;
     letter-spacing: 0.01em;
     word-spacing: 0.09em;
 }
 
+.current-home p{
+    opacity: 0.8;
+}
+
 /*CSS for total cases (Cards view)*/
 
+/*
 .list-detail {
     margin: 20px 0;
     padding: 10px 0;
 }
+*/
 
+/*
 .list-detail h2 {
 
     margin: 0;
     padding: 10px;
+    text-align: left;
     font-size: 1.5em;
     font-weight: 700;
     letter-spacing: 0.07em;
@@ -328,6 +373,7 @@ nav ul li a {
     border-radius: 5px;
 
 }
+*/
 
 .cards-area {
     margin: 1em auto;
@@ -347,20 +393,33 @@ nav ul li a {
     box-shadow: 3px 3px 3px #ccc;
 }
 
+#confirmed-color {
+    background-color: #ffff99;
+}
+#probable-color {
+    background-color: #ffd699;
+}
+#death-color {
+    background-color: #ff9999;
+}
+#recovered-color {
+    background-color: #99ffcc;
+}
+
 .card-detail {
     padding: 1.8em;
 }
 
-.card-name {
+.card-detail p {
     margin: 0;
     text-align: left;
     padding-bottom: 0.5em;
     font-weight: 400;
     letter-spacing: 0.08em;
-    opacity: 0.8;
+    opacity: 1;
 }
 
-.card-number {
+.card-detail h2 {
     padding: 0;
     margin: 0;
     font-size: 2.5em;
@@ -386,6 +445,7 @@ footer{
     justify-content: space-between;
     font-size: 0.8em;
     color: #000;
+    border-radius: 4px;
 }
 
 footer > div {
@@ -415,6 +475,10 @@ footer a{
     font-size: 2.5em;
     padding: 0.3em;
     color: #000;
+}
+.hashtag a{
+    font-size: 1.5em;
+    font-weight: 600;
 }
 
 
