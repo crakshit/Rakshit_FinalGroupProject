@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/18ff49a3e8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style1.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.toggle-menu').click(function() {
+                $('.toggle-menu').toggleClass('active');
+                $('nav').toggleClass('active');
+            })
+
+            $(window).scroll(function() {
+                //console.log($(window).scrollTop());
+                if ($(window).scrollTop() > 45) {
+                    $('.main-header').addClass('sticky');
+                }
+                if ($(window).scrollTop() < 44) {
+                    $('.main-header').removeClass('sticky');
+                }
+            })
+
+        })
+    </script>
+
+
+
+</head>
+
+<body>
+
+    <!--    Start of navigation    -->
+    <header>
+        <div class="top-header">
+            <div class="contact-list">
+                <ul>
+                    <li><a href="#"><i class="fas fa-phone-alt"></i>+1 (999) 999-9999</a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i>help@covid19.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-header">
+            <a href="#" class="logo">COVID-19</a>
+            <div class="toggle-menu"></div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="#">current situation</a></li>
+                    <li><a href="#">precautions</a></li>
+                    <li><a href="#">Canada</a></li>
+                    <li><a href="#">home</a></li>
+                </ul>
+            </nav>
+            <div class="clearfix"></div>
+        </div>
+    </header>
+    <!--    End of navigation    -->
+
+    <main>
+        <div class="main-container">
+
+            <!--
+            <div class="list-detail">
+                <i class="far fa-circle"></i>Present Scenario
+            </div>
+-->
+            <div class="current">
+                <div class="list-detail">
+                    <h2>Total cases globally</h2>
+                </div>
+                <div class="cards-area">
+                    <!-- Total confiremd cases -->
+                    <div class="cards">
+                        <div class="card-detail">
+                            <div class="card-icon">
+                                <i class="fas fa-procedures"></i>
+                            </div>
+                            <p class="card-name">Confirmed cases</p>
+                            <h2 class="card-number">123456</h2>
+                        </div>
+                    </div>
+
+                    <!-- Total Probable cases-->
+                    <div class="cards">
+                        <div class="card-detail">
+                            <div class="card-icon">
+                                <i class="fas fa-ambulance"></i>
+                            </div>
+                            <p class="card-name">Probable cases</p>
+                            <h2 class="card-number">123456</h2>
+                        </div>
+                    </div>
+
+                    <!-- Total deaths-->
+                    <div class="cards">
+                        <div class="card-detail">
+                            <div class="card-icon">
+                                <i class="fas fa-diagnoses"></i>
+                            </div>
+                            <p class="card-name">Total deaths</p>
+                            <h2 class="card-number">123456</h2>
+                        </div>
+                    </div>
+
+                    <!-- Total recovered-->
+                    <div class="cards">
+                        <div class="card-detail">
+                            <div class="card-icon">
+                                <i class="fas fa-first-aid"></i>
+                            </div>
+                            <p class="card-name">Total recovered</p>
+                            <h2 class="card-number">123456</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </main>
+</body></html>
