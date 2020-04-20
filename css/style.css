@@ -1,5 +1,5 @@
 /*Open Sans Google Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Open+Sans&display=swap');
 
 * {
     box-sizing: border-box;
@@ -12,6 +12,10 @@ body {
     max-width: 90%;
     margin: 10px auto;
     background-color: #eee;
+}
+
+h1, h2, h3{
+    font-family: 'Noto Serif JP', serif;
 }
 
 header {
@@ -129,12 +133,13 @@ nav ul li a {
     text-transform: uppercase;
     font-size: 3.5em;
     letter-spacing: 0.05em;
+    color: red;
 }
 
 .main-area h2 {
     margin: 0.5em 0;
     text-transform: capitalize;
-    font-size: 2em;
+    font-size: 2.5em;
     letter-spacing: 0.01em;
     word-spacing: 0.09em;
 }
@@ -441,14 +446,17 @@ nav ul li a {
 footer{
     background-color: #3CC78F;
     min-height: 100px;
-    display: flex;
-    justify-content: space-between;
     font-size: 0.8em;
     color: #000;
     border-radius: 4px;
 }
 
-footer > div {
+.footer-area{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-area > div {
     width: 20em;
     display: inline-block;
     padding: 1em;
@@ -581,7 +589,7 @@ footer a{
     }
     
     /* Footer */
-    footer{
+    .footer-area{
         display: block;
         text-align: center;
     }
