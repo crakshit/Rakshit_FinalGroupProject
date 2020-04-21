@@ -11,7 +11,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     max-width: 90%;
     margin: 10px auto;
-    background-color: #eee;
+/*    background-color: #eee;*/
 }
 
 h1,
@@ -48,7 +48,7 @@ main p {
 
 .top-header ul li a {
     font-size: 16px;
-    color: #222222;
+    color: #222;
     text-decoration: none;
 }
 
@@ -77,6 +77,12 @@ main p {
     font-weight: 700;
     text-decoration: none;
 }
+#logo_img{
+    position: relative;
+    width: 80%;
+    bottom: 10px;
+    right: 30px;
+}
 
 nav {
     float: right;
@@ -101,8 +107,9 @@ nav ul li a {
     margin: 10px 0;
     padding: 10px 20px;
     text-decoration: none;
-    color: #fff;
+    color: #000;
     text-transform: capitalize;
+    font-weight: 700;
 }
 
 .sticky {
@@ -111,10 +118,11 @@ nav ul li a {
     left: 5%;
     width: 90%;
     z-index: 100;
+    opacity: 0.8;
 }
 
 /* Home main */
-.main-container {
+.main-container, .situation-container {
     margin: 2rem;
 }
 
@@ -487,6 +495,10 @@ footer a {
     text-decoration: none;
 }
 
+#logo_img_footer{
+    width: 100px;
+}
+
 .footer-social a {
     font-size: 2.5em;
     padding: 0.3em;
@@ -502,6 +514,9 @@ footer a {
 .news h2{
     padding: 1em 0;
 }
+.news p{
+    max-width: 700px;
+}
 
 .news-area {
     display: flex;
@@ -515,7 +530,7 @@ footer a {
 
 .news-card {
     width: 550px;
-    background-color: #fff;
+    background-color: #eee;
     margin: 2em;
     padding: 1.5em;
     border-radius: 20px;
@@ -551,7 +566,7 @@ footer a {
 }
 
 
-@media (max-width: 768px) {
+@media only screen and (max-width:768px) {
 
     /*Navigation*/
     .toggle-menu {
@@ -563,13 +578,14 @@ footer a {
         cursor: pointer;
         text-align: center;
         font-size: 30px;
-        color: #fff;
+        color: #000;
     }
 
     .toggle-menu:before {
         content: '\f0c9';
         font-family: fontAwesome;
         line-height: 40px;
+        color: #000;
     }
 
     .toggle-menu.active:before {
@@ -652,6 +668,14 @@ footer a {
     /* Footer */
     .footer-area {
         display: block;
+        text-align: center;
+    }
+    
+    /* Situation Page */
+    .situation-container {
+        text-align: left;
+    }
+    .situation-container h1{
         text-align: center;
     }
 
